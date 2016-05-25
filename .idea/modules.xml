@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cachemap/cachemap.iml" filepath="$PROJECT_DIR$/cachemap/cachemap.iml" />
       <module fileurl="file://$PROJECT_DIR$/javatest.iml" filepath="$PROJECT_DIR$/javatest.iml" />
       <module fileurl="file://$PROJECT_DIR$/refactor/refactor.iml" filepath="$PROJECT_DIR$/refactor/refactor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threading/threading.iml" filepath="$PROJECT_DIR$/threading/threading.iml" />
     </modules>
   </component>
 </project>

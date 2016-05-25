@@ -24,10 +24,26 @@
         <processorPath useClasspath="true" />
         <module name="refactor" />
       </profile>
+      <profile default="false" name="Annotation profile for cachemap" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="cachemap" />
+      </profile>
+      <profile default="false" name="Annotation profile for threading" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="threading" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cachemap" target="1.8" />
       <module name="javatest" target="1.8" />
       <module name="refactor" target="1.8" />
+      <module name="threading" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
