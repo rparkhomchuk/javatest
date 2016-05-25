@@ -1,6 +1,6 @@
-package dao;
+package addressbook.dao;
 
-import dto.Person;
+import addressbook.dto.Person;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.List;
 public interface AddressBookDao {
 
 	/**
-	 * Save person to database
+	 * Save person to the database
 	 * @param person the person to save
 	 */
 	void addPerson(Person person);

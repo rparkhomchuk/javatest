@@ -1,6 +1,6 @@
-package dao;
+package addressbook.dao;
 
-import dto.Person;
+import addressbook.dto.Person;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class AddressBookOracleDao implements AddressBookDao {
 	@Override
 	public void addPerson(Person person) {
 		try (
-				Connection conn = DatabaseOracle.getConnection();
+				Connection conn = Database.getConnection();
 				PreparedStatement stmt = conn.prepareStatement("insert into AddressEntry values (?, ?, ?)");
 		) {
 			stmt.setLong(1, System.currentTimeMillis());
@@ -26,7 +26,7 @@ public class AddressBookOracleDao implements AddressBookDao {
 	@Override
 	public Person findFirstPerson(String name) {
 		try (
-				Connection conn = DatabaseOracle.getConnection();
+				Connection conn = Database.getConnection();
 				Statement stmt = conn.createStatement();
 				) {
 			ResultSet rs = stmt.executeQuery("select * from AddressEntry where name = '" + name + "'");
@@ -46,7 +46,7 @@ public class AddressBookOracleDao implements AddressBookDao {
 	@Override
 	public List<Person> getAll() {
 		try (
-				Connection conn = DatabaseOracle.getConnection();
+				Connection conn = Database.getConnection();
 				Statement stmt = conn.createStatement();
 				) {
 			ResultSet rs = stmt.executeQuery("select * from AddressEntry");

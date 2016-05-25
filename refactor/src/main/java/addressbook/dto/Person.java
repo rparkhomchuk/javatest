@@ -1,4 +1,4 @@
-package dto;
+package addressbook.dto;
 
 public class Person {
 	private String name;
