@@ -5,7 +5,7 @@ import addressbook.dto.Person;
 import java.util.List;
 
 /**
- * Created by rparkhomchuk on 5/25/2016.
+ * Class to work with database.
  */
 public interface AddressBookDao {
 

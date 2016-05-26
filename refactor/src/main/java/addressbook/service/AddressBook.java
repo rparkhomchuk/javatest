@@ -6,8 +6,6 @@ import java.util.List;
 
 /**
  * Service to work with address book.
- *
- * Created by rparkhomchuk on 5/25/2016.
  */
 public interface AddressBook {
 

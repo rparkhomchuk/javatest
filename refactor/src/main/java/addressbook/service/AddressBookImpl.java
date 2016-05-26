@@ -1,7 +1,7 @@
 package addressbook.service;
 
 import addressbook.dao.AddressBookDao;
-import addressbook.dao.AddressBookOracleDao;
+import addressbook.dao.AddressBookDaoImpl;
 import addressbook.dto.Person;
 
 import java.util.*;
@@ -11,7 +11,7 @@ public class AddressBookImpl implements AddressBook {
 
     public static final String SWEDEN_PHONE_CODE = "070";
 
-    private AddressBookDao dao = new AddressBookOracleDao();
+    private AddressBookDao dao = new AddressBookDaoImpl();
 
     @Override
     public boolean hasPhoneNumber(String name) {

@@ -1,7 +1,7 @@
 package fibonacci.calc;
 
 /**
- * Created by Roma on 25.05.2016.
+ * A Fibonacci calculator eager instantiation Singleton implementation.
  */
 public class FibCalcImpl implements FibCalc {
 

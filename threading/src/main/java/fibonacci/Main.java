@@ -6,9 +6,6 @@ import fibonacci.tester.PerformanceTesterImpl;
 
 import java.util.Scanner;
 
-/**
- * Created by Roma on 25.05.2016.
- */
 public class Main {
 
     public static void main(String[] args) {

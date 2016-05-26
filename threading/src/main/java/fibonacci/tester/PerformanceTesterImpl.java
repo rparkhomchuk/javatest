@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.concurrent.*;
 
 /**
- * Created by Roma on 25.05.2016.
+ * Performance tester implememntation.
  */
 public class PerformanceTesterImpl implements PerformanceTester {
 

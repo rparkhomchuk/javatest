@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddressBookOracleDao implements AddressBookDao {
+public class AddressBookDaoImpl implements AddressBookDao {
 
 	@Override
 	public void addPerson(Person person) {

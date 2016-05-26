@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 
 /**
- * Created by Roma on 24.05.2016.
+ * Cache Map implementation backed by {@link LinkedHashMap}
  */
 public class CacheMapImpl<KeyType, ValueType> implements CacheMap<KeyType, ValueType> {
     public static final long ETERNAL = 0L;
